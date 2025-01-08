@@ -1,43 +1,27 @@
 # Nyxsis AI 🤖
-
-<div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Nyxsis AI Banner" width="100%" />
-</div>
-
-<div align="center">
-
-📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
-
-</div>
-
+## @NyxsisAI - https://x.com/Nyxsis_AI
 ## ✨ Features
 
-- 🛠️ Full-featured Discord, Twitter, and Telegram connectors
-- 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
-- 👥 Multi-agent and room support
-- 📚 Easily ingest and interact with your documents
-- 💾 Retrievable memory and document store
-- 🚀 Highly extensible - create your own actions and clients
-- ☁️ Supports many models (local Llama, OpenAI, Anthropic, Groq, etc.)
-- 📦 Just works!
-
-## Video Tutorials
-
-[AI Agent Dev School](https://www.youtube.com/watch?v=ArptLpQiKfI&list=PLx5pnFXdPTRzWla0RaOxALTSTnVq53fKL)
+- 🛠️ Full-featured Twitter connector for seamless interaction.
+- 🔗 Context-aware dialogue generation using the `@ai16z/eliza` framework.
+- 👥 Multi-agent support for handling multiple conversations simultaneously.
+- 📚 Easily ingest and interact with user-generated content.
+- 💾 Retrievable memory for maintaining conversation context.
+- 🚀 Highly extensible - create custom actions and responses for your Twitter bot.
+- 📦 Just works with minimal setup!
 
 ## 🎯 Use Cases
 
-- 🤖 Chatbots
-- 🕵️ Autonomous Agents
-- 📈 Business Process Handling
-- 🎮 Video Game NPCs
-- 🧠 Trading
+- 🤖 Automated Twitter Chatbot for engaging with users.
+- 📈 Business Process Handling through automated responses to inquiries.
+- 🕵️ Monitoring and responding to trends and mentions in real-time.
+- 🎮 Interactive experiences for users through engaging dialogues.
+- 🧠 Gathering user feedback and insights via automated interactions.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- [Python 2.7+](https://www.python.org/downloads/)
 - [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [pnpm](https://pnpm.io/installation)
 
@@ -65,15 +49,11 @@ git clone https://github.com/elizaos/eliza.git
 git checkout $(git describe --tags --abbrev=0)
 ```
 
-### Start Nyxsis AI with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/elizaos/eliza/tree/main)
-
 ### Edit the .env file
 
 Copy .env.example to .env and fill in the appropriate values.
 
-```
+```bash
 cp .env.example .env
 ```
 
@@ -93,9 +73,9 @@ sh scripts/start.sh
 
 2. To load custom characters:
     - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - Change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X.
+    - Multiple character files can be loaded simultaneously.
+3. Connect with Twitter:
+    - Change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with Twitter.
 
 ### Manually Start Nyxsis AI
 
@@ -112,6 +92,6 @@ pnpm clean
 
 You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
 
-```
+```bash
 pnpm install --include=optional sharp
 ```
