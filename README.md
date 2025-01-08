@@ -1,7 +1,7 @@
-# Eliza 🤖
+# Nyxsis AI 🤖
 
 <div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
+  <img src="./docs/static/img/eliza_banner.jpg" alt="Nyxsis AI Banner" width="100%" />
 </div>
 
 <div align="center">
@@ -10,13 +10,9 @@
 
 </div>
 
-## 🌍 README Translations
-
-[中文说明](./README_CN.md) | [日本語の説明](./README_JA.md) | [한국어 설명](./README_KOR.md) | [Français](./README_FR.md) | [Português](./README_PTBR.md) | [Türkçe](./README_TR.md) | [Русский](./README_RU.md) | [Español](./README_ES.md) | [Italiano](./README_IT.md) | [ไทย](./README_TH.md) | [Deutsch](./README_DE.md) | [Tiếng Việt](./README_VI.md) | [עִברִית](https://github.com/elizaos/Elisa/blob/main/README_HE.md)
-
 ## ✨ Features
 
-- 🛠️ Full-featured Discord, Twitter and Telegram connectors
+- 🛠️ Full-featured Discord, Twitter, and Telegram connectors
 - 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
 - 👥 Multi-agent and room support
 - 📚 Easily ingest and interact with your documents
@@ -56,9 +52,9 @@ cp .env.example .env
 pnpm i && pnpm build && pnpm start
 ```
 
-Then read the [Documentation](https://elizaos.github.io/eliza/) to learn how to customize your Eliza.
+Then read the [Documentation](https://elizaos.github.io/eliza/) to learn how to customize your Nyxsis AI.
 
-### Manually Start Eliza (Only recommended if you know what you are doing)
+### Manually Start Nyxsis AI (Only recommended if you know what you are doing)
 
 ```bash
 # Clone the repository
@@ -69,7 +65,7 @@ git clone https://github.com/elizaos/eliza.git
 git checkout $(git describe --tags --abbrev=0)
 ```
 
-### Start Eliza with Gitpod
+### Start Nyxsis AI with Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/elizaos/eliza/tree/main)
 
@@ -81,11 +77,11 @@ Copy .env.example to .env and fill in the appropriate values.
 cp .env.example .env
 ```
 
-Note: .env is optional. If your planning to run multiple distinct agents, you can pass secrets through the character JSON
+Note: .env is optional. If you're planning to run multiple distinct agents, you can pass secrets through the character JSON.
 
-### Automatically Start Eliza
+### Automatically Start Nyxsis AI
 
-This will run everything to setup the project and start the bot with the default character.
+This will run everything to set up the project and start the bot with the default character.
 
 ```bash
 sh scripts/start.sh
@@ -99,9 +95,9 @@ sh scripts/start.sh
     - Use `pnpm start --characters="path/to/your/character.json"`
     - Multiple character files can be loaded simultaneously
 3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
+    - Change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X.
 
-### Manually Start Eliza
+### Manually Start Nyxsis AI
 
 ```bash
 pnpm i
@@ -119,18 +115,3 @@ You may need to install Sharp. If you see an error when starting up, try install
 ```
 pnpm install --include=optional sharp
 ```
-
-### Community & contact
-
-- [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
-- [Discord](https://discord.gg/ai16z). Best for: sharing your applications and hanging out with the community.
-
-## Contributors
-
-<a href="https://github.com/elizaos/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=elizaos/eliza" />
-</a>
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=elizaos/eliza&type=Date)](https://star-history.com/#elizaos/eliza&Date)
